@@ -1,10 +1,12 @@
-# Android device tree for Alldocube iPlay 50 Pro (T1030M)
-
-```
 #
 # Copyright (C) 2024 The Android Open Source Project
 # Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-```
+
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),T1030M)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
